@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+    font-family: serif;
+}
+header,h1{
+    background: rgb(0, 0, 213);
+    padding: 5px;
+}
+header h1{
+    color: white;
+    margin-left: 250px;
+    font-size: 25px;
+}
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+form{
+    background: white;
+    width: 375px;
+    height: 270px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.input-wrapper input,button{
+    width: 220px;
+    height: 30px;
+}
+/* .input-wrapper input.hover{
+
+} */
+.input-wrapper button,a{
+    margin-top: 10px;
+    background:  rgb(0, 0, 213);
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.input-1{
+    margin-bottom: 10px;
+}
+::placeholder{
+    font-size: 12px;
+    font-weight: 200;
+    padding-left: 5px;
+}
+hr{
+    margin-top: 10px;
+    width: 220px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.create-new{
+   width: 150px;
+   font-size: 13px;
+   background: rgb(98, 218, 43);
+   border: none;
+   padding: 5px;
+   cursor: pointer;
+
+}.create-new a{
+    background: transparent;
+    font-weight: 400;
+}
+.color-blue{
+    font-size: 14px;
+    background: transparent;
+    color: blue;
+    font-weight: 400;
+}
+
+@media (max-width: 600px){
+    main{
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    header{
+        display: none;
+    }
+    h3{
+        display: none;
+    }
+    .color-blue{
+        display: none;
+    }
+    form{
+        height: 200px;
+        width: 250px;
+    }
+    hr{
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    .input-wrapper input, button{
+        width: 200px;
+    }
+    .create-new{
+        width: 120px;
+    }
+.create-new a{
+    font-size: 12px;
+}
+
+}
